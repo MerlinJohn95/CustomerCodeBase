@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "141bd4ea-6876-4962-8bee-0deb8e31a6a0",
+		"name": "Customer_Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET-CustomerDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9092/v1/customer/get/customer-details?id=1098",
+					"host": [
+						"localhost"
+					],
+					"port": "9092",
+					"path": [
+						"v1",
+						"customer",
+						"get",
+						"customer-details"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1098"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-CustomerDetails",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9092/v1/customer/delete/customer-details?id=1098",
+					"host": [
+						"localhost"
+					],
+					"port": "9092",
+					"path": [
+						"v1",
+						"customer",
+						"delete",
+						"customer-details"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1098"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SAVE-CustomerDetails",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"1098\",\r\n    \"name\": \"JOSEPH\",\r\n    \"email\": \"joseph.rose@gmail.com\",\r\n    \"address\": \"Malysia\",\r\n    \"dob\": \"28-07-2005\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9092/v1/customer/save/customer-details",
+					"host": [
+						"localhost"
+					],
+					"port": "9092",
+					"path": [
+						"v1",
+						"customer",
+						"save",
+						"customer-details"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
